@@ -25,11 +25,11 @@ const Footer = () => {
   return (
     <div className="container py-12 md:flex md:items-center md:justify-between">
       <ul className="flex justify-center md:order-2">
-        <FooterLink href={links.twitter} icon={FaTwitter} label="Twitter" />
-        <FooterLink href={links.facebook} icon={FaFacebook} label="Facebook" />
+        {/* <FooterLink href={links.twitter} icon={FaTwitter} label="Twitter" />
+        <FooterLink href={links.facebook} icon={FaFacebook} label="Facebook" /> */}
         <FooterLink href={links.linkedin} icon={FaLinkedin} label="LinkedIn" />
 
-        <FooterLink
+        {/* <FooterLink
           href={links.instagram}
           icon={FaInstagram}
           label="Instagram"
@@ -37,7 +37,7 @@ const Footer = () => {
         <FooterLink
           href={links.pinterest}
           icon={FaPinterest}
-          label="Pinterest"
+          label="Pinterest" */}
         />
       </ul>
       <div className="mt-8 md:mt-0 md:order-1">
