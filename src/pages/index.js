@@ -45,7 +45,7 @@ const AboutPage = ({ data }) => (
               </a>
             </div>
           </div>
-          <img src={Mayur} alt="image" width="240" height="350" className=' border-blue-600 border-4 rounded-md' ></img>
+          <img src={Mayur} alt="image" width="240" height="350" className=' border-blue-600 border-8 rounded-md' ></img>
 
           {/* <div className=" flex flex-wrap justify-items-end ">
 
