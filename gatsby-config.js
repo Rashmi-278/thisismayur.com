@@ -19,7 +19,7 @@ module.exports = {
       instagram: "https://www.instagram.com/",
       pinterest: "https://pinterest.com/",
       twitter: "https://twitter.com/",
-      linkedin: "https://linkedin.com/"
+      linkedin: "https://www.linkedin.com/in/mayur-a-69b489213/"
     },
     locale: "en",
     title: `Mayur V A`,

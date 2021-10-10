@@ -3,6 +3,8 @@ import Img from "gatsby-image"
 import React from "react"
 import Layout from "../layouts/Layout"
 import SiteMetadata from "../components/SiteMetadata"
+import Mayur from "../images/mayur2.jpg"
+import { FaTwitter, FaLinkedin } from "react-icons/fa"
 
 const AboutPage = ({ data }) => (
   <Layout>
@@ -10,55 +12,30 @@ const AboutPage = ({ data }) => (
 
     <div className="bg-gray-100">
       <div className="container py-12 lg:pb-16">
-        <div className="flex flex-wrap">
-          <div className="w-full md:w-1/2 xl:w-3/5 pb-8 md:pb-0">
+        <div className="flex flex-wrap  justify-evenly">
+          <div className="w-full md:w-1/2 xl:w-3/5 pb-8 md:pb-0 py-10">
             <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-blue-600 sm:text-4xl">
-            Hello, I'm Mayur.{" "}
-            <span role="img" aria-label="waving hand">
-        👋
-      </span>
+              Hello, I'm Mayur.{" "}
+              <span role="img" aria-label="waving hand">
+                👋
+              </span>
             </h1>
-            <h2 className="text-xl leading-tight font-semibold tracking-tight text-blue-600 sm:text-2xl">
-            </h2>
+            <h2 className="text-xl leading-tight font-semibold tracking-tight text-blue-600 sm:text-2xl"></h2>
             <div className="mt-4 leading-loose">
-              I'm an aspiring entrepreneur who's currently working as a sales
-              manager at Zerodha. Entrepreneurship and financial markets are two
-              things I am passionate about. During the course of my school
-              years, I was an average student academically. I watched many
-              Patric Bet David videos on YouTube that inspired me to be an
-              entrepreneur.
+              I'm an aspiring entrepreneur who's currently working as an
+              Assistant manager at Zerodha. Currently based in Hubli, India.
+              Entrepreneurship and financial markets are two things I am
+              passionate about. I spend a lot of time studying and researching
+              entrepreneurship and economics.
               <br />
               <br />
-              For that reason, I enrolled in Commerce college in my hometown
-              (Dharwad) after completing my high school. Three months later, I
-              dropped out of college because they didn't emphasize
-              entrepreneurship, and I began learning business by working in a
-              cafe. I was fortunate that my parents were supportive. Attending
-              entrepreneurship events (TIEcon hubli, Sandbox startups etc) was
-              also something I did to meet people and learn.
-              {/* Here are some pictures : */}
+              Outside work I particularly enjoy Working out, watching
+              documentaries & Collecting coins. As an infographics enthusiast, I
+              share my thoughts and ideas visually. You can view them on my
+              blog.
               <br />
               <br />
-              A recommendation from my elder sister led me to discover stock
-              markets at the age of 16, where I began virtual trading. The year
-              I turned 18, I opened my first trading account at Zerodha and
-              began my journey in the stock market. Back then I aspired to
-              become one of the legendary investors and traders like Ray Dalio,
-              Nithin Kamath and many others. 
-              {/* More about my trading journey here (Link) */}
-              <br />
-              <br />
-              My trading career was not successful, so I decided to become a
-              stock broker at India's largest brokerage company Zerodha. Luckily
-              I got the job at Zerodha because of my knowledge and passion for
-              stock markets. Also, I created the social media brand BTI, which
-              had more than 40,000 Organic Followers on major social media
-              platforms. My goal was to make it similar to Moneycontrol's
-              website, but I later opted to stop and focus on trading full-time.
-              This is my journey up to now.
-              <br />
-              <br />
-              I'm happy to hear from you:
+              Let&apos;s connect:
               <br />
               <a
                 href="mailto:kreatonmayur@gmail.com"
@@ -68,13 +45,16 @@ const AboutPage = ({ data }) => (
               </a>
             </div>
           </div>
-          <div className="w-full md:w-1/2 xl:w-2/5 md:pl-12">
+          <img src={Mayur} alt="image" width="240" height="350" className=' border-blue-600 border-4 rounded-md' ></img>
+
+          {/* <div className=" flex flex-wrap justify-items-end ">
+
             <Img
               fluid={data.author.childImageSharp.fluid}
               alt="Mayur"
               className="rounded-md shadow-md border-8 border-blue-600"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
@@ -87,10 +67,11 @@ export const query = graphql`
   query {
     author: file(relativePath: { eq: "mayur2.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 250, maxHeight: 480, quality: 100) {
+        fluid(maxWidth: 280, maxHeight: 300, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
   }
 `
+//maxWidth: 250, maxHeight: 480, quality: 100
